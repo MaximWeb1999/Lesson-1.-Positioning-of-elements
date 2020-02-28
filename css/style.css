@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding: 0 calc(50% - 570px);
+}
+
+.header {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(236, 236, 236, 1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.17);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left,
+.header_right,
+.header-form {
+    display: flex;
+    align-items: center;
+}
+
+.header_cart {
+    margin-right: 26px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 37px;
+}
+
+.logo_img {
+    margin-right: 13px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu_link {
+    padding: 20px;
+    display: block;
+}
+
+.promo {
+    height: 614px;
+    background-color: rgba(232, 232, 232, 1);
+    background-image: url(../img/promo_back.png);
+    background-position: center -51px;
+    background-repeat: no-repeat;
+}
+
+.promo_content {
+    margin-top: 224px;
+    float: left;
+    border-left: 12px solid rgba(241, 109, 127, 1);
+    padding-left: 12px;
+}
+
+.promo_h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: rgba(34, 34, 34, 1);
+    letter-spacing: 0.03em;
+    line-height: 45px;
+    margin-bottom: 12px;
+}
+
+.promo_h2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: rgba(34, 34, 34, 1);
+    letter-spacing: 0.03em;
+    line-height: 33px;
+}
+
+.menu1 {
+    padding-top: 98px;
+    justify-content: center;
+    display: flex;
+}
+
+.block1 {
+    float: left;
+}
+
+.block2 {
+    margin-left: 20px;
+}
+
+.photo2,
+.photo4 {
+    margin-top: 20px;
+}
+
+.photo1 {
+    background: url(../img/photo1.png);
+    background-repeat: no-repeat;
+    height: 542px;
+    width: 560px;
+}
+
+.photo2 {
+    background: url(../img/photo2.png);
+    background-repeat: no-repeat;
+    height: 261px;
+    width: 560px;
+}
+
+.photo3 {
+    background: url(../img/photo3.png);
+    background-repeat: no-repeat;
+    height: 261px;
+    width: 560px;
+}
+
+.photo4 {
+    background: url(../img/photo4.png);
+    background-repeat: no-repeat;
+    height: 542px;
+    width: 560px;
+}
+
+.block1_photo1,
+.block2_photo3,
+.block2_photo4 {
+    height: 82px;
+    width: 175px;
+    background-color: #ffffff;
+    position: absolute;
+    margin-top: 26px;
+}
+
+.block1_photo2 {
+    height: 82px;
+    width: 225px;
+    background-color: #ffffff;
+    position: absolute;
+    margin-top: 26px;
+}
+
+.text {
+    padding-left: 18px;
+    padding-top: 16px;
+}
+
+.menu1-h3 {
+    font-size: 18px;
+    font-weight: 900;
+    color: #222222;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.menu1-h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #f16d7f;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.menu2 {
+    text-align: center;
+    margin: 100px 0 110px 0;
+}
+
+.menu2_h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #222222;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.menu2_p {
+    margin-bottom: 60px;
+    font-size: 14px;
+    color: #9f9f9f;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.gallery {
+    justify-content: center;
+    display: flex;
+}
+
+.gallery img:hover {
+    background-image: url(../img/background.png);
+}
+
+.gallery h4 {
+    font-size: 13px;
+    color: #222222;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 14px;
+}
+
+.gallery p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f16d7f;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 13px;
+}
+
+.menu2_button {
+    margin-top: 79px;
+    height: 48px;
+    width: 212px;
+    background-color: #f16d7f;
+}
+
+.menu2_button_p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+.menu3 {
+    text-align: center;
+    width: 1140px;
+
+}
+
+.menu3_promo {
+    background-image: url(../img/promo2.png);
+    height: 529px;
+    width: 767px;
+    background-color: rgba(232, 232, 232, 1);
+    background-repeat: no-repeat;
+    position: relative;
+}
