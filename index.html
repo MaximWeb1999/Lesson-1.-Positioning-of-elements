@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a7f423e924.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,9 +17,27 @@
                 <img class="logo_img" src="img/logo.png" alt="logo">
                 <h2 class="logo_h2">BRAN</h2><span class="d">D</span>
             </a>
-            <form action="" class="header-form">
-                <div class="browse">Browse</div>
-                <input type="text">
+            <form action="" class="header_form">
+                <details class="browse">
+                    <summary>Browse</summary>
+                    <div class="drop">
+                        <div class="drop_col">
+                            <h3 class="drop_h3">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="#" class="drop_a">Dresses</a></li>
+                                <li><a href="#" class="drop_a">Top</a></li>
+                                <li><a href="#" class="drop_a">Sweaters/Knits</a></li>
+                                <li><a href="#" class="drop_a">Jackets/Coa</a></li>
+                                <li><a href="#" class="drop_a">Blaze</a></li>
+                                <li><a href="#" class="drop_a">Denim</a></li>
+                                <li><a href="#" class="drop_a">Leggings/Pa</a></li>
+                                <li><a href="#" class="drop_a">Skirts/Short</a></li>
+                                <li><a href="#" class="drop_a">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </details>
+                <input type="text" placeholder="Search for Item...">
                 <button><img src="img/search.png" alt="search"></button>
             </form>
         </div>
@@ -30,7 +49,39 @@
     <nav class="nav">
         <ul class="menu center">
             <li class="menu_list"><a href="#" class="menu_link">Home</a></li>
-            <li class="menu_list"><a href="#" class="menu_link">Man</a></li>
+            <li class="menu_list"><a href="#" class="menu_link">Man</a>
+                <div class="drop">
+                    <div class="drop_col">
+                        <h3 class="drop_h3">Women</h3>
+                        <ul class="drop_ul">
+                            <li><a href="#" class="drop_a">Dresses</a></li>
+                            <li><a href="#" class="drop_a">Top</a></li>
+                            <li><a href="#" class="drop_a">Sweaters/Knits</a></li>
+                            <li><a href="#" class="drop_a">Jackets/Coa</a></li>
+                            <li><a href="#" class="drop_a">Blaze</a></li>
+                            <li><a href="#" class="drop_a">Denim</a></li>
+                            <li><a href="#" class="drop_a">Leggings/Pa</a></li>
+                            <li><a href="#" class="drop_a">Skirts/Short</a></li>
+                            <li><a href="#" class="drop_a">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop_col">
+                        <h3 class="drop_h3">Women</h3>
+                        <ul class="drop_ul">
+                            <li><a href="#" class="drop_a">Dresses</a></li>
+                            <li><a href="#" class="drop_a">Top</a></li>
+                            <li><a href="#" class="drop_a">Sweaters/Knits</a></li>
+                            <li><a href="#" class="drop_a">Jackets/Coa</a></li>
+                        </ul>
+                        <h3 class="drop_h3">Women</h3>
+                        <ul class="drop_ul">
+                            <li><a href="#" class="drop_a">Dresses</a></li>
+                            <li><a href="#" class="drop_a">Top</a></li>
+                            <li><a href="#" class="drop_a">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
             <li class="menu_list"><a href="#" class="menu_link">Women</a></li>
             <li class="menu_list"><a href="#" class="menu_link">Kids</a></li>
             <li class="menu_list"><a href="#" class="menu_link">Accoseriese</a></li>
@@ -184,8 +235,8 @@
             </div>
         </div>
     </section>
-    <section class="subscribe center">
-        <div class="subscribe_box">
+    <section class="subscribe">
+        <div class="subscribe_box center">
             <div class="subscribe_box_1">
                 <div class="subscribe_box_1_text">
                     <p class="subscribe_box_1_p">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
@@ -195,19 +246,13 @@
                 </div>
                 <img class="subscribe_box_1_image" src="img/girl_1.png" alt="">
             </div>
-            <div class="subscribe_box_2">
-                <div class="subscribe_box_2_text">
-                    <h2 class="subscribe_box_2_h2">Subscribe</h2>
-                    <h3 class="subscribe_box_2_h3"> FOR OUR NEWLETTER AND PROMOTION</h3>
-                </div>
-                <div class="subscribe_box_2_subscribe">
-                    <div class="subscribe_box_2_subscribe_div">
-                        <input class="subscribe_box_2_subscribe_placeholder" type="placeholder"
-                            value="Enter Your Email">
-                    </div>
-                    <input class="subscribe_box_2_subscribe_input" type="submit" value="Subscribe">
-                </div>
-
+            <div class="subsribe_form">
+                <h5>Subscribe</h5>
+                <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                <form class="form_style" action="#">
+                    <input type="email" placeholder="Enter Your Email">
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
 
@@ -232,40 +277,39 @@
         <div class="main_footer_column">
             <h2 class="main_footer_column_h2">COMPANY</h2>
             <div class="main_footer_column_menu">
-                <h3>Home</h3>
-                <h3>Shop </h3>
-                <h3>About </h3>
-                <h3>How It Works</h3>
-                <h3>Contact</h3>
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">How It Works</a>
+                <a href="#">Contact</a>
             </div>
 
         </div>
         <div class="main_footer_column">
             <h2 class="main_footer_column_h2">INFORMATION</h2>
             <div class="main_footer_column_menu">
-                <h3>Tearms & Condition</h3>
-                <h3>Privacy Policy </h3>
-                <h3>How to Buy </h3>
-                <h3>How to Sell</h3>
-                <h3>Promotion</h3>
+                <a href="#">Tearms & Condition</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">How to Buy</a>
+                <a href="#">How to Sell</a>
+                <a href="#">Promotion</a>
             </div>
         </div>
         <div class="main_footer_column">
             <h2 class="main_footer_column_h2">SHOP CATEGORY</h2>
             <div class="main_footer_column_menu">
-                <h3>Men </h3>
-                <h3>Women </h3>
-                <h3>Child </h3>
-                <h3>Apparel </h3>
-                <h3>Brows All</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Child</a>
+                <a href="#">Apparel</a>
+                <a href="#">Brows All</a>
             </div>
         </div>
 
     </footer>
-
     <footer class="bottom_footer center">
         <div class="footer_left">
-            <p class="footer_left_p">© 2017 Brand All Rights Reserved.</p>
+            <p class="footer_left_p">© 2020 Brand All Rights Reserved.</p>
         </div>
         <div class="footer_right">
             <a class="footer_right_img" href=""><img src="img/fb_1.png" alt=""></a>

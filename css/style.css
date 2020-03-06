@@ -27,9 +27,40 @@ a {
 
 .header-left,
 .header_right,
-.header-form {
+.header_form {
     display: flex;
     align-items: center;
+}
+
+.header_form input {
+    height: 38px;
+    width: 317px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 0px 3px 3px 0px;
+    padding: 14px 16px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 300;
+    color: #a4a4a4;
+    letter-spacing: 0.03em;
+}
+
+.header_form button {
+    height: 38px;
+    width: 38px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+}
+
+.browse {
+    position: relative;
+}
+
+.browse[open] .drop {
+    display: flex;
+    top: 20px;
+    z-index: 1;
 }
 
 .header_cart {
@@ -72,8 +103,65 @@ a {
     justify-content: center;
 }
 
+.menu_list {
+    position: relative;
+}
+
 .menu_list:hover {
     text-decoration: underline;
+}
+
+.menu_list:hover .drop {
+    display: flex;
+}
+
+.drop {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    display: none;
+    top: 48px;
+}
+
+
+.drop_last {
+    right: 0;
+}
+
+.drop_col {
+    margin-right: 45px;
+}
+
+.drop_col::last-of-type {
+    margin-right: 0;
+}
+
+.drop_h3 {
+    font-size: 14px;
+    color: #232323;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 8px;
+    width: 234px;
+}
+
+.drop_ul {
+    list-style: none;
+}
+
+.drop_a {
+    font-size: 14px;
+    color: #646464;
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+}
+
+.drop_a:hover {
+    color: red;
 }
 
 .menu_link {
@@ -180,7 +268,7 @@ a {
 }
 
 .header_text {
-    margin: 40px 0 60px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -202,6 +290,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 60px;
 }
 
 .product {
@@ -275,7 +364,6 @@ a {
     color: #ffffff;
     text-align: right;
     letter-spacing: 0.03em;
-    line-height: 32px;
     background-color: #f16d7f;
     padding: 12px 16px;
     border: 1px solid #f16d7f;
@@ -313,6 +401,7 @@ a {
 .offer_1 {
     display: flex;
     margin-top: 115px;
+    margin-bottom: 100px;
 }
 
 .offer_1_box {
@@ -322,7 +411,7 @@ a {
 
 .offer_1_image1 {
     height: 529px;
-    width: 767px;
+    width: 765px;
     background: url(../img/promo2.png) no-repeat;
 }
 
@@ -398,17 +487,19 @@ a {
 }
 
 .subscribe {
-    background: url(../img/background.png) no-repeat;
+    background: url(../img/background2.png), url(../img/background.png) no-repeat center;
+    background-size: cover;
     height: 438px;
     background-position: top;
     background-color: rgb(222, 222, 222);
-    opacity: 0.5;
-    margin-top: 100px;
+    padding-top: 111px;
+    box-sizing: border-box;
 }
 
+
 .subscribe_box {
-    padding: 132px 0 0 0;
     display: flex;
+    justify-content: space-between;
 }
 
 .subscribe_box_1 {
@@ -450,65 +541,62 @@ a {
     line-height: 14px;
 }
 
-.subscribe_box_2_text {
-    margin-top: 35px;
-    margin-left: 180px;
-}
-
-.subscribe_box_2_h2 {
+/* ------------------------subsribe_form------------------------------------------- */
+.subsribe_form h5 {
     font-size: 24px;
     color: #222224;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 
-.subscribe_box_2_h3 {
+.subsribe_form p {
     font-size: 14px;
     color: #222224;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 35px;
 }
 
-.subscribe_box_2_subscribe {
-    margin-left: 125px;
-    margin-top: 35px;
-    position: relative;
+.form_style {
+    display: flex;
 }
 
-.subscribe_box_2_subscribe_div {
+.form_style input {
+    width: 280px;
     height: 46px;
-    width: 334px;
-    background-color: #cecece;
-    border-radius: 23px;
     font-size: 14px;
     color: #222224;
     letter-spacing: 0.03em;
-    float: left;
+    background-color: #e1e1e1;
+    border-radius: 23px 0 0 23px;
+    border: 0;
+    padding: 0 28px;
+    text-align: left;
 }
 
-.subscribe_box_2_subscribe_div_p {
-    margin-top: 14px;
-    margin-left: 28px;
+.form_style input:focus {
+    border: 1px solid rgb(241, 109, 127) padding: 0 27px;
 }
 
-.subscribe_box_2_subscribe_input {
+.form_style button {
     height: 46px;
     width: 104px;
     background-color: #f16d7f;
     border-radius: 0px 23px 23px 0px;
-    position: absolute;
-    left: 260px;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: 0;
 }
 
-.subscribe_box_2_subscribe_placeholder {
-    background: transparent;
-    height: 46px;
-    width: 334px;
-    border-radius: 20px;
-    padding-left: 10px;
+.form_style button:hover {
+    opacity: 0.7;
 }
 
+/*-------------------------MAIN FOOTER----------------------------------------------*/
 .main_footer {
     margin-top: 110px;
     padding-bottom: 65px;
@@ -548,6 +636,16 @@ a {
     line-height: 42px;
 }
 
+.main_footer_column_menu a {
+    display: block;
+    color: black;
+
+}
+
+.main_footer_column_menu a:hover {
+    text-decoration: underline;
+}
+
 .bottom_footer {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -565,11 +663,173 @@ a {
 }
 
 .footer_right_img {
-    background-color: #ffffff;
-    padding: 8px 11px;
-    margin-right: 8px;
+    padding: 10px;
+    margin-left: 7px;
+    height: 32px;
+    width: 32px;
+    font-size: 16px;
+    color: #b2b2b2;
+    text-align: right;
+    letter-spacing: 0.03em;
+    background-color: #fff;
+    box-sizing: border-box;
 }
 
-.footer_right_img:nth-child(2) {
+.footer_right_img:hover {
     background-color: #f16d7f;
+    color: #f7f7f8;
+}
+
+.arrivals {
+    background-color: #f8f3f4;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrivals_menu h2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #f16d7f;
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.arrivals_menu p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #636363;
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.arrivals_menu span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f16d7f;
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.product_2 {
+    display: flex;
+}
+
+.product_2_menu_filter {
+    display: flex;
+}
+
+.sidebar_bottom summary {
+    padding: 12px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #ebebeb;
+    width: 243px;
+    border-left: 5px solid #ef5b70;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.sidebar_bottom:hover summary {
+    color: #ef5b70;
+}
+
+.sidebar_drop_ul {
+    list-style: none;
+    padding: 0 0 20px 15px;
+    font-size: 14px;
+    color: #6f6e6e;
+    line-height: 33px;
+
+}
+
+.filter_bottom_sort {
+    height: 50px;
+    width: 846px;
+    background-color: #f3f3f3;
+}
+
+.filter_bottom_sort_1 {
+    display: flex;
+}
+
+.filter_bottom_sort_1_block {
+    margin: 10px;
+    display: flex;
+    height: 30px;
+    width: 153px;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+}
+
+.next {
+    height: 44px;
+    width: 261px;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ef5b70;
+    line-height: 26px;
+    box-sizing: border-box;
+    padding: 17px 39px;
+}
+
+.button_view {
+    background-color: #f16d7f;
+    padding: 15px 45px;
+    border: 1px solid #f16d7f;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 26px;
+    height: 44px;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.button_view:hover {
+    border: 1px solid #f16d7f;
+    background-color: #fff;
+    color: #f16d7f;
+}
+
+.product_box_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature_box {
+    background-color: #222224;
+    height: 341px;
+    margin-top: 110px;
+    display: flex;
+    padding-top: 90px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.feature h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fbfbfb;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+}
+
+.feature p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fbfbfb;
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    margin-top: 15px;
 }
